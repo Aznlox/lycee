@@ -6,24 +6,28 @@ import java.sql.SQLException;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Database {
-	
-	public Connection DbConnexion(){
-	
+public class Database
+{
+
+	public Connection DbConnexion()
+	{
+
 		String url = "jdbc:mysql://localhost/cantine?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 		String user = "root";
 		String password="";
-		
-		try {
+
+		try
+		{
 			Connection cnx = DriverManager.getConnection(url, user, password);
 			return cnx;
-			
-			} catch (SQLException ee) {
-				System.out.println("Une erreur est survenue lors de la connexion à la base de données");
+
+			} catch (SQLException ee)
+			{
+				System.out.println("Une erreur est survenue lors de la connexion ï¿½ la base de donnï¿½es");
 				ee.printStackTrace();
 			}
 		return null;
 	}
-	
+
 
 }
