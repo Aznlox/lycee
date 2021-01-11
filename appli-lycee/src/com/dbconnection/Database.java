@@ -21,11 +21,11 @@ public class Database
 			Connection cnx = DriverManager.getConnection(url, user, password);
 			return cnx;
 
-			} catch (SQLException ee)
-			{
-				System.out.println("Une erreur est survenue lors de la connexion � la base de donn�es");
-				ee.printStackTrace();
-			}
+		} catch (SQLException ee)
+		{
+			System.out.println("Une erreur est survenue lors de la connexion � la base de donn�es");
+			ee.printStackTrace();
+		}
 		return null;
 	}
 
