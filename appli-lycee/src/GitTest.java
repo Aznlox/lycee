@@ -1,4 +1,5 @@
 
-public class GitTest {
+public class GitTest
+{
 
 }
